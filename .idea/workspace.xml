@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6340fb25-21cf-4ac7-b4e6-7a4f2497ea3b" name="Changes" comment="" />
+    <list default="true" id="6340fb25-21cf-4ac7-b4e6-7a4f2497ea3b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Scenes/Alphabet/FindMissing.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Scenes/Alphabet/WhichFirst.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Scenes/Alphabet/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Scenes/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Letter.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/alphabet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/actions/scoreActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/screReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,15 +40,33 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/kostya/projects/KossGuk.github.io",
+    "last_opened_file_path": "/Users/kostya/projects/kossguk.github.io",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -43,7 +75,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707447877032</updated>
-      <workItem from="1707447878611" duration="323000" />
+      <workItem from="1707447878611" duration="302000" />
+      <workItem from="1707448202079" duration="821000" />
+      <workItem from="1707449035410" duration="9931000" />
     </task>
     <servers />
   </component>
