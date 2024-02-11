@@ -1,10 +1,11 @@
 import React from "react";
 
-import {Accordion, AccordionDetails, AccordionSummary, Box, Rating} from "@mui/material";
+import {Accordion, AccordionDetails, AccordionSummary, Box, Divider, Rating} from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import WhichFirst from "./Alphabet/WhichFirst";
 import FindMissing from "./Alphabet/FindMissing";
 import {useSharedState} from "../store/store";
+import WriteFromPhoto from "./Writing/WriteFromPhoto";
 
 export default function AllScenes() {
     const {
@@ -14,12 +15,19 @@ export default function AllScenes() {
     } = useSharedState()
     return (
         <Box>
-            <Rating
-                name="simple-controlled"
-                value={current}
-                max={20}
-                readOnly
-            />
+            <Box
+                sx={{position: 'fixed', top: 0, left: 0, right: 0, zIndex: 99999, backgroundColor: 'white'}}
+            >
+                <Rating
+
+                    name="simple-controlled"
+                    value={current}
+                    max={20}
+                    readOnly
+                />
+            </Box>
+
+            <Divider sx={{marginTop: '30px'}} />
             <Accordion>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
@@ -38,6 +46,16 @@ export default function AllScenes() {
                 </AccordionSummary>
                 <AccordionDetails>
                     <FindMissing />
+                </AccordionDetails>
+            </Accordion>
+            <Accordion>
+                <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                >
+                    Write the picture
+                </AccordionSummary>
+                <AccordionDetails>
+                    <WriteFromPhoto />
                 </AccordionDetails>
             </Accordion>
         </Box>

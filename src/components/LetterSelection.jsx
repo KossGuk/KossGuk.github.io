@@ -13,7 +13,7 @@ export default function LetterSelection (props) {
         }
         setTimeout(() => {
             setBg({})
-        }, 5000)
+        }, 1000)
     }
     return <Grid
 
@@ -21,9 +21,6 @@ export default function LetterSelection (props) {
         >
             <Button
                 sx={{
-                    // border: '1px solid black',
-                    // width: '30px',
-                    // height: '30px',
                     ...bg
                 }}
                 variant="contained"
