@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6340fb25-21cf-4ac7-b4e6-7a4f2497ea3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Scenes/Writing/WriteFromPhoto.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Scenes/Writing/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scenes/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scenes/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LetterSelection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LetterSelection.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scenes/Alphabet/FindMissing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scenes/Alphabet/FindMissing.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Letter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Letter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/alphabet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/alphabet.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +69,7 @@
       <updated>1707447877032</updated>
       <workItem from="1707447878611" duration="302000" />
       <workItem from="1707448202079" duration="821000" />
-      <workItem from="1707449035410" duration="12183000" />
+      <workItem from="1707449035410" duration="18388000" />
     </task>
     <servers />
   </component>
