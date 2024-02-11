@@ -1,6 +1,6 @@
 import {alphabet, getNumber} from "../../shared/alphabet";
 import {Box, Grid} from "@mui/material";
-import Letter from "../../components/Letter";
+import LetterSelection from "../../components/LetterSelection";
 
 const WhichFirst = () => {
     const randomToFindIndexFirst = getNumber();
@@ -21,8 +21,8 @@ const WhichFirst = () => {
               {alphabet[randomToFindIndexSec]}
           </Box>
           <Grid container>
-              <Letter letter={letterA} index={randomToFindIndexFirst} isCorrect={randomToFindIndexFirst <randomToFindIndexSec} />
-              <Letter letter={letterB} index={randomToFindIndexSec} isCorrect={randomToFindIndexFirst >randomToFindIndexSec} />
+              <LetterSelection letter={letterA} index={randomToFindIndexFirst} isCorrect={randomToFindIndexFirst <randomToFindIndexSec} />
+              <LetterSelection letter={letterB} index={randomToFindIndexSec} isCorrect={randomToFindIndexFirst >randomToFindIndexSec} />
           </Grid>
       </>
   )

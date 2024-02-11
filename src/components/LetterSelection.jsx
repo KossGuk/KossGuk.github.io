@@ -1,7 +1,7 @@
 import {Box, Button, Grid} from "@mui/material";
 import React, {useState} from "react";
 
-export default function Letter (props) {
+export default function LetterSelection (props) {
     // const
     const {letter, index, isCorrect} = props
     const [bg, setBg] = useState({})

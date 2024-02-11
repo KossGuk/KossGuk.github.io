@@ -2,7 +2,7 @@ import logo from './logo.svg';
 // import './App.css';
 import React, {useState} from "react";
 import {Box, Button, Grid} from '@mui/material';
-import Letter from "./components/Letter";
+import Letter from "./components/LetterSelection";
 import {StateProvider} from "./store/store";
 import AllScenes from "./Scenes";
 

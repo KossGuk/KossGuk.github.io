@@ -3,6 +3,7 @@ import {Box, Button, Grid, Input} from "@mui/material";
 import React, {useEffect, useState} from "react";
 import {useSharedDispatch} from "../../store/store";
 import {correctAction} from "../../store/actions/scoreActions";
+import Letter from "../../components/Letter";
 
 const FindMissing = () => {
     const [selected, setSelected] = useState('');
@@ -45,8 +46,9 @@ const FindMissing = () => {
           <Grid container direction={'row'}>
               {__alphabet.map((letter, i) => {
                   return (
-                      <Grid item key={'FM'+letter} sx={{width: '60px', height: '60px', border: '1px solid black', textAlign: 'center',
-                          paddingTop: '5px'}}>{letter}</Grid>
+                      <Grid item key={'FM'+letter}>
+                          <Letter letter={letter} />
+                      </Grid>
                   )
               })}
           </Grid>
