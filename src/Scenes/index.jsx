@@ -6,6 +6,7 @@ import WhichFirst from "./Alphabet/WhichFirst";
 import FindMissing from "./Alphabet/FindMissing";
 import {useSharedState} from "../store/store";
 import WriteFromPhoto from "./Writing/WriteFromPhoto";
+import SortTheAlphabet from "./Alphabet/SortTheAlphabet";
 
 export default function AllScenes() {
     const {
@@ -19,7 +20,6 @@ export default function AllScenes() {
                 sx={{position: 'fixed', top: 0, left: 0, right: 0, zIndex: 99999, backgroundColor: 'white'}}
             >
                 <Rating
-
                     name="simple-controlled"
                     value={current}
                     max={20}
@@ -46,6 +46,16 @@ export default function AllScenes() {
                 </AccordionSummary>
                 <AccordionDetails>
                     <FindMissing />
+                </AccordionDetails>
+            </Accordion>
+            <Accordion hidden>
+                <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                >
+                    Sort the alphabet!
+                </AccordionSummary>
+                <AccordionDetails>
+                    <SortTheAlphabet />
                 </AccordionDetails>
             </Accordion>
             <Accordion>

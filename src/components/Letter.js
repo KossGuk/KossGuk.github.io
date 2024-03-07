@@ -6,22 +6,22 @@ import {useSharedDispatch} from "../store/store";
 function randomIntFromInterval(min, max) { // min and max included
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
-const Letter = ({letter, missingIndex, index, onSuccess}) => {
+const Letter = ({letter, missingIndex, index, onSuccess, editable=false}) => {
     const dispatch = useSharedDispatch();
     const [selected, setSelected] = useState('');
 
     const rotation = useMemo(() => randomIntFromInterval(-20, 20), [missingIndex])
 
-    const isMissing = missingIndex === index;
+    const isMissing = missingIndex === index && editable;
 
     const onInput = (event) => {
         const selected = event.target.value.toUpperCase();
         setSelected(selected);
         const isCorrect = letter === selected;
         if(isCorrect) {
-            let utterance = new SpeechSynthesisUtterance("Correct!");
+            let utterance = new SpeechSynthesisUtterance(letter.toLowerCase());
             speechSynthesis.speak(utterance);
-            utterance = new SpeechSynthesisUtterance(letter.toLowerCase());
+            utterance = new SpeechSynthesisUtterance('Correct!');
             speechSynthesis.speak(utterance);
             dispatch(correctAction);
         } else {
@@ -61,7 +61,7 @@ const Letter = ({letter, missingIndex, index, onSuccess}) => {
             }}
              onClick={onLetterClick}
         >
-            {missingIndex === index ? (
+            {isMissing ? (
                 <Input sx={{
                     fontSize: '40px',
                     height: '100%',

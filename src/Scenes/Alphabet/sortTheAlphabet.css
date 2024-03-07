@@ -1,0 +1,16 @@
+@keyframes example {
+    from {top: 0;}
+    to {top: 100px;}
+}
+
+
+.letter {
+    top: 0;
+    position: relative;
+}
+.letter-shaked {
+    animation-name: example;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}

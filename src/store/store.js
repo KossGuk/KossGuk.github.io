@@ -3,7 +3,7 @@ import {taskReducer} from "./reducers/screReducer";
 
 export const initState = {
     score: {
-        current: 0
+        current: 0,
     }
 }
 
@@ -15,10 +15,6 @@ DispatchContext.displayName = 'DispatchContext';
 
 const combineReducer = (state, action) => ({
     score: taskReducer(state, action),
-    // action: taskReducer(state.action, action as ActionActionType),
-    // metric: metricReducer(state.metric, action as MetricActionType),
-    // report: shiftSummaryReducer(state.report, action as ShiftSummaryActionsType),
-    // causes: rootCausesReducer(state.causes, action as RootCausesActionType),
 });
 
 export const StateProvider = ({ children }) => {

@@ -15,7 +15,7 @@ const FindMissing = () => {
               {alphabet.map((letter, i) => {
                   return (
                       <Grid item key={'FM'+letter}>
-                          <Letter letter={letter} missingIndex={missingIndex} index={i} onSuccess={onSuccess}/>
+                          <Letter editable letter={letter} missingIndex={missingIndex} index={i} onSuccess={onSuccess}/>
                       </Grid>
                   )
               })}
